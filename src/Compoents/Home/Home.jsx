@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../Head/Header';
 import Latest from '../Latest/Latest';
 import Navbar from '../Navbar/Navbar';
+import AnotherNavbar from '../Navbar/AnotherNavbar';
 
 
 const Home = () => {
@@ -11,10 +12,10 @@ const Home = () => {
             <div className='w-11/12 mx-auto'>
             <Latest></Latest>            
             </div>
-            <div className='w-11/12 mx-auto'>
+            <div className='w-11/12 mx-autors'>
                 <Navbar></Navbar>
             </div>
-            
+            <AnotherNavbar></AnotherNavbar>
         </div>
     );
 };

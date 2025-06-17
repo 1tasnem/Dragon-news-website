@@ -1,5 +1,6 @@
 import { FaShareAlt, FaRegEye } from "react-icons/fa";
 import { AiFillStar } from "react-icons/ai";
+import { Link } from "react-router";
 
 const NewsCard = (props = {}) => {
   const { data } = props || {};
@@ -35,7 +36,7 @@ const NewsCard = (props = {}) => {
       {/* Details */}
       <p className="text-gray-700 text-sm mb-4">
         {data.details.slice(0, 150)}...{" "}
-        <span className="text-primary">Read More</span>
+        <Link to={`/data/${data._id}`}className="text-primary">Read More</Link >
       </p>
 
       {/* Ratings and Views */}
